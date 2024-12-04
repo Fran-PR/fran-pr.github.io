@@ -1,0 +1,100 @@
+header {
+  background: linear-gradient(to bottom right, #222, #444);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 30px;;
+}
+span{
+  font-weight: bold;
+}
+h1 {
+  font-family: 'Courier New', monospace;
+  color:#f0f0f0;
+  font-size: 4rem;
+  text-align: center;
+  animation: marquee 15s linear infinite;
+}
+/*
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+  */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .botones button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd; /* Light gray buttons */
+    color: black;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botones button:hover {
+    background-color: #ccc; /* Darker gray on hover */
+  }
+  
+  /* Movie Card Styles */
+  
+  .peliculas {
+    display: flex; /* Makes child elements display horizontally */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    justify-content: space-between; /* Evenly distributes cards horizontally */
+    margin: 0 -10px; /* Removes horizontal margin from container */
+  }
+  
+  .pelicula {
+    width: calc(20% - 20px); /* Calculates card width based on three columns */
+    margin: 10px; /* Adds margin between cards */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* White card background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .pelicula img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .pelicula p {
+    margin-bottom: 5px;
+    color: #333; /* Darker text */
+  }
+
+
+  #genre {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  
+  /* Responsive Styles (Optional) */
+  
+  @media screen and (max-width: 768px) {
+    .pelicula {
+      width: calc(50% - 20px); /* Adjusts width for smaller screens (two columns) */
+    }
+  }
