@@ -94,7 +94,15 @@ body {
   /* Responsive Styles (Optional) */
   
   @media screen and (max-width: 768px) {
+
+    .botones {
+    flex-wrap: wrap; /* permite que los botones se acomoden en varias lineas */
+  }
     .pelicula {
       width: calc(50% - 20px); /* Adjusts width for smaller screens (two columns) */
     }
+    button,
+  select {
+    font-size: 14px; /* reduce el tamaño de fuente para pantallas pequeñas */
+  }
   }
