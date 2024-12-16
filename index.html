@@ -18,28 +18,32 @@
     <div>
         <nav>
             <div>
-                <input type="text" placeholder="Título">
-                <input type="button" value="Buscar">
+                <input type="text" id="txtTitle" placeholder="Título">
+                <input type="button" id="btnTitle" value="Buscar">
             </div>
             <div>
-                <input type="text" placeholder="Actor\Actriz">
-                <input type="button" value="Buscar">
+                <input type="text" id="txtActor" placeholder="Actor\Actriz">
+                <input type="button" id="btnActor" value="Buscar">
             </div>
             <div>
                 <input type="number" id="year" name="Año" min="1936" max="2024">
             </div>
             <div>
-                <select name="genres">
-                    <option value="drama">Drama</option>
+                <select name="genres" id="selGenre">
+                    <option value="drama" >Drama</option>
                     <option value="crime">Crime</option>
                     <option value="biography">Biography</option>
                   </select>
             </div>
             <div>
-                <select name="order">
+                <select name="order" id="selOrder">
+                    <option value=""></option>
+
                     <option value="asc">Ascendente</option>
                     <option value="desc">Descendente</option>
                   </select>
+                  <input type="button" id="btnOrder"value="Buscar">
+
 
             </div>
 
