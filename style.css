@@ -1,6 +1,6 @@
 body {
-  background-color: #222; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #fff; /* Light background for a retro vibe */
+  color: #000; /* Black text */
   font-family: sans-serif; /* Default font */
 }
 
@@ -10,15 +10,16 @@ header {
 }
 
 h1 {
-  color: #fff; /* White header text */
+  color: #000; /* Black header text */
+  font-family: cursive; /* Add a cursive font for retro style */
 }
 
 nav {
   display: flex; /* Arrange navigation elements horizontally */
+  flex-wrap: wrap; /* Allow elements to wrap onto multiple lines if necessary */
   justify-content: space-between; /* Distribute elements evenly */
   align-items: center; /* Vertically align elements in the center */
   padding: 10px 0; /* Add some padding */
-  background-color: #333; /* Slightly darker background for navigation bar */
 }
 
 nav input[type="text"],
@@ -27,7 +28,7 @@ nav select {
   padding: 5px;
   border: 1px solid #ccc; /* Light grey border */
   border-radius: 4px; /* Rounded corners */
-  margin-right: 10px; /* Add some space between elements */
+  margin: 5px; /* Add some space between elements */
   background-color: #eee; /* Light grey background for inputs and selects */
   color: #333; /* Darker text for better contrast */
 }
@@ -42,21 +43,22 @@ nav input[type="button"] {
 }
 
 .pelicula {
-  background-color: #444; /* Darker background for movie cards */
+  display: inline-block; /* Display movie cards inline-horizontally */
+  width: 22%; /* Set width for each card to display four per row */
   margin: 10px; /* Add margin between cards */
   padding: 15px; /* Add padding inside cards */
+  border: 2px solid #ccc; /* Thicker border for a retro look */
   border-radius: 4px; /* Rounded corners */
-  color: #fff; /* White text for movie card content */
-  display: flex; /* Arrange movie card elements horizontally */
-  align-items: center; /* Vertically align content within cards */
+  color: #000; /* Black text for movie card content */
+  text-align: center; /* Center text within cards */
+  font-weight: bold; /* Bold text for a stronger retro feel */
 }
 
 .pelicula img {
-  width: 150px; /* Set width for movie posters */
-  margin-right: 15px; /* Add margin to the right of the poster */
+  width: 100%; /* Set full width for posters within cards */
+  margin-bottom: 10px; /* Add some space below the poster */
 }
 
-.pelicula h2,
 .pelicula p {
   margin: 5px 0; /* Add some margin between title and paragraphs */
 }
