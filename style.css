@@ -1,21 +1,14 @@
 /* Estilos generales */
 body {
     font-family: 'Montserrat', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
+    color: #fff; /* Texto blanco sobre fondo oscuro */
+    background-color: #222;
   }
   
   /* Encabezado */
   header {
-    background-color: #222;
-    color: #fff;
+    background-color: #111; /* Tono de gris más oscuro para el encabezado */
     padding: 20px;
-  }
-  
-  h1 {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
   }
   
   /* Sección de películas */
@@ -26,21 +19,17 @@ body {
   }
   
   .pelicula {
-    width: 300px;
+    background-color: #333; /* Fondo ligeramente más claro para las películas */
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 20px;
     margin: 20px;
     text-align: center;
   }
   
-  .pelicula img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
   /* Pie de página */
   footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #111; /* Mismo tono de gris oscuro que el encabezado */
     padding: 20px;
     text-align: center;
   }
