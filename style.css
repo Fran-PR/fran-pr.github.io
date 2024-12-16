@@ -1,35 +1,62 @@
-/* Estilos generales */
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff; /* Texto blanco sobre fondo oscuro */
-    background-color: #222;
-  }
-  
-  /* Encabezado */
-  header {
-    background-color: #111; /* Tono de gris más oscuro para el encabezado */
-    padding: 20px;
-  }
-  
-  /* Sección de películas */
-  .peliculas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .pelicula {
-    background-color: #333; /* Fondo ligeramente más claro para las películas */
-    border: 1px solid #555;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
-  }
-  
-  /* Pie de página */
-  footer {
-    background-color: #111; /* Mismo tono de gris oscuro que el encabezado */
-    padding: 20px;
-    text-align: center;
-  }
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  font-family: sans-serif; /* Default font */
+}
+
+header {
+  text-align: center; /* Center align header content */
+  margin-bottom: 20px; /* Add some space after the header */
+}
+
+h1 {
+  color: #fff; /* White header text */
+}
+
+nav {
+  display: flex; /* Arrange navigation elements horizontally */
+  justify-content: space-between; /* Distribute elements evenly */
+  align-items: center; /* Vertically align elements in the center */
+  padding: 10px 0; /* Add some padding */
+  background-color: #333; /* Slightly darker background for navigation bar */
+}
+
+nav input[type="text"],
+nav input[type="number"],
+nav select {
+  padding: 5px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Add some space between elements */
+  background-color: #eee; /* Light grey background for inputs and selects */
+  color: #333; /* Darker text for better contrast */
+}
+
+nav input[type="button"] {
+  padding: 5px 10px;
+  background-color: #e00000; /* Red background for buttons */
+  color: #fff; /* White text for buttons */
+  border: none; /* Remove border for cleaner look */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.pelicula {
+  background-color: #444; /* Darker background for movie cards */
+  margin: 10px; /* Add margin between cards */
+  padding: 15px; /* Add padding inside cards */
+  border-radius: 4px; /* Rounded corners */
+  color: #fff; /* White text for movie card content */
+  display: flex; /* Arrange movie card elements horizontally */
+  align-items: center; /* Vertically align content within cards */
+}
+
+.pelicula img {
+  width: 150px; /* Set width for movie posters */
+  margin-right: 15px; /* Add margin to the right of the poster */
+}
+
+.pelicula h2,
+.pelicula p {
+  margin: 5px 0; /* Add some margin between title and paragraphs */
+}
