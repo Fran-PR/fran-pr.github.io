@@ -14,8 +14,67 @@ function generateCard(pelicula){
 
 }
 
+function generateCard(pelicula){
+    //1. Crear la tarjeta
+    const nuevaCard = document.createElement("div");//Crea un elemento de tipo div
+    nuevaCard.setAttribute("class","card");
+    //2. Crear la imagen
+    const nuevaImg = document.createElement("img");
+    nuevaImg.setAttribute("src", pelicula.Poster);
+    nuevaImg.setAttribute("alt", `Póster de la película ${pelicula.Title}`);
+    nuevaCard.appendChild(nuevaImg);
+    //3. Crear el contenido de la tarjeta
+    const nuevoContenido = document.createElement("div");
+    nuevoContenido.setAttribute("class","card-content");
+    nuevaCard.appendChild(nuevoContenido);
+    //4. Crear el h3 del título <h3>El Padrino</h3>
+    const nuevoTitulo = document.createElement("h3");
+    nuevoTitulo.textContent = pelicula.Title;
+    nuevoContenido.appendChild(nuevoTitulo);
+    //5. Crear el director <p><strong>Director:</strong> Francis Ford Coppola</p>
+    const nuevoParrafoDirector = document.createElement("p");
+    const directorBold = document.createElement("strong");
+    nuevoParrafoDirector.appendChild(directorBold);
+    directorBold.textContent = "Director: ";
+    nuevoContenido.appendChild(nuevoParrafoDirector);
+    const textoDirector = document.createTextNode(pelicula.Director)
+    nuevoParrafoDirector.appendChild(textoDirector);
+
+    //6.Añadir Año
+    const nuevoParrafoAnno = document.createElement("p");
+     nuevoParrafoAnno.appendChild(nuevaNegrita);
+     const annoBold = document.createElement("strong");
+     annoBold.textContent = "Año: ";
+    nuevoContenido.appendChild(nuevoParrafoAnno);
+    const textoAnno = document.createTextNode(pelicula.Year)
+    nuevoParrafoAnno.appendChild(annoBold);
+    nuevoParrafoAnno.appendChild(nuevaNegrita);
+    nuevaNegrita.textContent = "Año: ";
+    nuevoContenido.appendChild(nuevoParrafoAnno);
+     textoAnno = document.createTextNode(pelicula.Year)
+    nuevoParrafoAnno.appendChild(textoAnno);
+
+    //7.Añadir Genero
+
+    const nuevoParrafoGenre= document.createElement("p");
+    nuevoParrafoGenre.appendChild(nuevaNegrita);
+    nuevaNegrita.textContent = "Genero: ";
+    nuevoContenido.appendChild(nuevoParrafoGenre);
+    const textoGenre= document.createTextNode(pelicula.Genre)
+    nuevoParrafoGenre.appendChild(textoGenre);
+
+
+    
+    //Último paso: Agregar al contenedor la ficha recién creada
+    document.querySelector("#divFichas").appendChild(nuevaCard);//Agregamos el div al contenedor
+}
+
 function processMovie(data) {
     const peliculas=data.movies;
+
+    peliculas.forEach(pelicula => {
+        generateCard(pelicula);
+    });
 
 }
 //esta funcion viene de myhttp.js
