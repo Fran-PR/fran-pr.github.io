@@ -2,6 +2,7 @@ const URL = 'https://fran-pr.github.io/movies-250.json';
 
 
 //funcion para generar fichas nuevas
+/*
 function generateCard(pelicula) {
     //Creacion de la card
     const newCard = document.createElement('div');//esto nos cre un elemento de tipo div
@@ -14,6 +15,7 @@ function generateCard(pelicula) {
     document.querySelector('#divFichas').appendChild(newCard);//le agregamos el div al contenedor
 
 }
+    */
 
 function generateCard(pelicula) {
     //1. Crear la tarjeta
@@ -72,8 +74,10 @@ function generateCard(pelicula) {
     document.querySelector("#divFichas").appendChild(nuevaCard);//Agregamos el div al contenedor
 }
 
+//declaramos la variable fuera de la funcion para que el ambito sea global
+let peliculas;
 function processMovie(data) {
-    const peliculas = data.movies;
+    peliculas = data.movies;
 
     peliculas.forEach(pelicula => {
         generateCard(pelicula);
