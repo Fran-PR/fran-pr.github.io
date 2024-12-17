@@ -7,6 +7,15 @@ body {
   color: #fff; /* White text */
 }
 
+.card{
+  margin-bottom: 50px;
+  border-color: #eee;
+  border-style: solid;
+  padding: 15px;
+  border-radius: 5px;
+  
+}
+
 h1, h2, p {
   margin: 0;
 }
