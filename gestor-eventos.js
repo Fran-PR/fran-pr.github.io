@@ -11,14 +11,11 @@ document.querySelector("#btnTitle").addEventListener("click",()=>{
         .toUpperCase());
 
     console.log(peliculasFiltradas);
-        
-   
+
     peliculasFiltradas.forEach(pelicula => {
         generateCard(pelicula);
 
     });
-
-
 
 
     //busqueda por actor, genero y orden
