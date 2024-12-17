@@ -10,16 +10,13 @@ function generateCard(pelicula){
     newImg.setAttribute("src", peliculaPoster);//le añadimos el atributo src
     newImg.setAttribute("alt", `Poster de la pelicula ${pelicula.Title}`);
     newCard.appendChild(newImg);//agregamos la imagen a la card
-    
+
     document.querySelector("#divFichas").appendChild(newCard);//le agregamos el div al contenedor
 
 }
 
 function processMovie(data) {
     const peliculas=data.movies;
-    
-
-
 
 }
 //esta funcion viene de myhttp.js
