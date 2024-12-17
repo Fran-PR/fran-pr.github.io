@@ -2,7 +2,7 @@ const URL='https://fran-pr.github.io/movies-250.json';
 
 function processMovie(data) {
     const peliculas=data.movies;
-    peliculas.array.forEach(element => {
+    peliculas.array.forEach(pelicula => {
         console.log(pelicula.Title);
     });
 }
