@@ -77,7 +77,7 @@ function generateCard(pelicula) {
 //declaramos la variable fuera de la funcion para que el ambito sea global
 let peliculas;
 function processMovie(data) {
-    peliculas = data.movies;
+    peliculas = data.movies;//la inicializamos aqui
 
     peliculas.forEach(pelicula => {
         generateCard(pelicula);
