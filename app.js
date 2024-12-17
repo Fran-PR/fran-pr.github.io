@@ -8,10 +8,23 @@ function processMovie(data) {
 
     }
 
-    //Recorremos 
+    //Recorremos  bucle for-of
+    for(pelicula of peliculas){
+        //console.log("Director:"+peliculas.Director);
+
+    }
+
+    //Bucle forEach
     peliculas.forEach(pelicula => {
         console.log(pelicula.Title);
     });
+
+    //For in, es para recorrer objetos
+    for(atributo in peliculas[0]){
+        
+    }
+
+
 }
 //esta funcion viene de myhttp.js
 doGetRequest(URL, processMovie);
