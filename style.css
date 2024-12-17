@@ -125,3 +125,40 @@ span {
     width: 100%;
   }
 }
+
+/* ... (resto de tu código CSS) ... */
+
+/* Navigation Styles */
+nav {
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+  justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+  width: 100%;
+}
+
+/* Estilos para botones y otros elementos en dispositivos móviles */
+@media (max-width: 768px) {
+  nav div {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select,
+  input[type="button"] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  label {
+    display: block; /* Muestra las etiquetas en una nueva línea */
+  }
+}
