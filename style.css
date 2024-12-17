@@ -1,64 +1,127 @@
+/* General Styles */
 body {
-  background-color: #fff; /* Light background for a retro vibe */
-  color: #000; /* Black text */
-  font-family: sans-serif; /* Default font */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222; /* Black background */
+  color: #fff; /* White text */
 }
 
+h1, h2, p {
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e00; /* Red on hover */
+}
+
+/* Header Styles */
 header {
-  text-align: center; /* Center align header content */
-  margin-bottom: 20px; /* Add some space after the header */
+  background-color: #e00; /* Red header */
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
-  color: #000; /* Black header text */
-  font-family: cursive; /* Add a cursive font for retro style */
+  color: #fff;
+  font-size: 2em;
 }
 
+/* Navigation Styles */
 nav {
-  display: flex; /* Arrange navigation elements horizontally */
-  flex-wrap: wrap; /* Allow elements to wrap onto multiple lines if necessary */
-  justify-content: space-between; /* Distribute elements evenly */
-  align-items: center; /* Vertically align elements in the center */
-  padding: 10px 0; /* Add some padding */
+  background-color: #222; /* Black background */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-nav input[type="text"],
-nav input[type="number"],
-nav select {
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
   padding: 5px;
-  border: 1px solid #ccc; /* Light grey border */
-  border-radius: 4px; /* Rounded corners */
-  margin: 5px; /* Add some space between elements */
-  background-color: #eee; /* Light grey background for inputs and selects */
-  color: #333; /* Darker text for better contrast */
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #333; /* Dark gray background for inputs */
+  color: #fff;
 }
 
-nav input[type="button"] {
+input[type="button"] {
   padding: 5px 10px;
-  background-color: #e00000; /* Red background for buttons */
-  color: #fff; /* White text for buttons */
-  border: none; /* Remove border for cleaner look */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Change cursor to indicate interactivity */
+  border: none;
+  border-radius: 5px;
+  background-color: #e00; /* Red buttons */
+  color: #fff;
+  cursor: pointer;
+}
+
+select {
+  appearance: none; /* Remove default select styles */
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath fill='%23fff' d='M2 0l2 2-2 2z'/%3E%3C/svg%3E"); /* Add dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 15px;
+}
+
+span {
+  margin-right: 5px;
+  color: #ccc; /* Light gray labels */
+}
+
+/* Movie Card Styles */
+#divFichas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 .pelicula {
-  display: inline-block; /* Display movie cards inline-horizontally */
-  width: 22%; /* Set width for each card to display four per row */
-  margin: 10px; /* Add margin between cards */
-  padding: 15px; /* Add padding inside cards */
-  border: 2px solid #ccc; /* Thicker border for a retro look */
-  border-radius: 4px; /* Rounded corners */
-  color: #000; /* Black text for movie card content */
-  text-align: center; /* Center text within cards */
-  font-weight: bold; /* Bold text for a stronger retro feel */
+  width: 25%;
+  background-color: #333; /* Dark gray background */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .pelicula img {
-  width: 100%; /* Set full width for posters within cards */
-  margin-bottom: 10px; /* Add some space below the poster */
+  width: 100%;
+  border-radius: 5px;
 }
 
-.pelicula p {
-  margin: 5px 0; /* Add some margin between title and paragraphs */
+.pelicula h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav div {
+    margin: 0 10px;
+  }
+
+  .pelicula {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pelicula {
+    width: 100%;
+  }
 }
