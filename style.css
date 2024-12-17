@@ -46,13 +46,15 @@ nav {
   background-color: #222; /* Black background */
   padding: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap; /* This will wrap elements to a new line when there's no more space */  gap: 10px;
 }
 
 nav div {
   display: flex;
   align-items: center;
+  flex: 1 1 50%; /* Divide the available space equally between elements */
+  margin: 10px; /* Add some spacing between elements */
 }
 
 input[type="text"],
@@ -154,6 +156,7 @@ nav div {
 @media (max-width: 768px) {
   nav div {
     flex-direction: column;
+    flex-basis: 100%; /* Make each element take up the full width of the screen */
   }
 
   input[type="text"],
