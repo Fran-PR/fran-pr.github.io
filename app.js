@@ -84,5 +84,10 @@ function processMovie(data) {
     });
 
 }
+
+function clearCards(){
+    //document.querySelector("#container").innerHTML="";//Chapuza
+    document.querySelectorAll(".card").forEach(card=>card.remove());//Elegante
+}
 //esta funcion viene de myhttp.js
 doGetRequest(URL, processMovie);
