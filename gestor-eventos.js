@@ -15,7 +15,9 @@ document.querySelector("#btnTitle").addEventListener("click",()=>{
 
     });
 
+    
+
 
     //busqueda por actor, genero y orden
-    
+
 })
