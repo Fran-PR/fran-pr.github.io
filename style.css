@@ -139,7 +139,6 @@ nav {
 nav div {
   display: flex;
   flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
-  justify-content: space-between; /* Distribuye los elementos de forma equitativa */
   width: 100%;
 }
 
