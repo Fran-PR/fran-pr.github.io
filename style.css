@@ -67,7 +67,6 @@ input[type="button"] {
 
 select {
   appearance: none; /* Remove default select styles */
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath fill='%23fff' d='M2 0l2 2-2 2z'/%3E%3C/svg%3E"); /* Add dropdown arrow */
   background-repeat: no-repeat;
   background-position: right center;
   padding-right: 15px;

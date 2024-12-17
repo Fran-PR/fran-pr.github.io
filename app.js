@@ -1,28 +1,17 @@
 const URL='https://fran-pr.github.io/movies-250.json';
 
+
+//funcion para generar fichas nuevas
+function generateCard(pelicula){
+    const newCard= document.createElement('div');//esto nos cre un elemento de tipo div
+    document.querySelector("#divFichas").appendChild(newCard);//le agregamos el div al contenedor
+    
+}
+
 function processMovie(data) {
     const peliculas=data.movies;
-    //Recorremos con bucle for tradicional
-    for(let i=0; i<peliculas.length;i++){
-        console.log("Duration:"+peliculas[i].Runtime);
+    
 
-    }
-
-    //Recorremos  bucle for-of
-    for(pelicula of peliculas){
-        //console.log("Director:"+peliculas.Director);
-
-    }
-
-    //Bucle forEach
-    peliculas.forEach(pelicula => {
-        console.log(pelicula.Title);
-    });
-
-    //For in, es para recorrer objetos
-    for(atributo in peliculas[0]){
-        
-    }
 
 
 }
